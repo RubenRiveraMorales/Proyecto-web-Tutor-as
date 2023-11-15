@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+   margin: 0;
+   
+}
+
+h1{
+    font-size: 4.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.5em;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    font-size: 1.25em;
+}
+
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+
+.color-acento{
+    color:rgb(0, 0, 0);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    box-shadow: 0 5px 10px rgba(240, 233, 233, 0.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+header .logo{
+    font-size: 50px;
+    font-weight: bolder;
+    color:#333;
+    text-decoration: none;
+
+}
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+position: relative;
+float: left;
+}
+
+header .navbar ul li a{
+  font-size: 20px;
+  padding: 20px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+
+header .navbar ul li a:hover{
+    background: #333;
+    color: #fff;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("media/hero.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     padding: 20px;
+
+
+}
+
+#uv .container{
+    text-align: justify;
+    padding: 200px 12px;
+
+}
+
+@media(max-width: 950px){
+    header{
+        padding: 10px;
+    }
+
+    header label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+}
+
+@media(min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
+
+#tabla{
+    padding: 40px;
+    text-align: center;
+}
+
+
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    border: 1px solid #ccc; 
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc; 
+    padding: 5px; 
+    text-align: center; 
+    font-size: 12px;
+}
+
+td img {
+    max-width: 100px;
+}
+
+th {
+    background-color: #39e227; 
+}
+
+tr{
+    height: 30px;
+}
+
+td:first-child {
+    width: 100px; 
+}
+
+
+
+
+@media(min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #uv .container {
+        padding: 20px;
+        display: flex;
+        align-items: center; 
+    }
+
+    #uv .texto {
+        width: 50%; 
+        padding: 10px;
+        text-align: justify;
+        background-color: rgba(0, 0, 0, 0.59); 
+        border-radius: 15px; 
+        color: white; 
+        margin-right: 20px;
+    }
+
+    #uv .img-container{
+        background-image: url("media/tutor2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 50%;
+    }
+
+    #uv .texto h3 {
+        margin-top: 20px; 
+        color: #000000;
+    }
+
+    #uv h2{
+        margin-top: 0px;
+    }
+
+    
+
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color:rgb(100,100,100) ;
+    background-size: cover;
+}
+
+footer .container{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer{
+    background-color: aliceblue;
+}
+
